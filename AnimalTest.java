@@ -9,29 +9,34 @@ public class AnimalTest {
         ArrayList<Bird> birdList = new ArrayList<Bird>();
         ArrayList<Dog> dogList = new ArrayList<Dog>();
         ArrayList<Parrot> parrotList = new ArrayList<Parrot>();
-        String[] names = {"Kiwi","Cat","Danger","Horse"};
+
 
 
         for(int i=0;i<4;i++){
-            if(i%2==0){
-                Dog dog = new Dog();
-                animalList.add(dog);
-                mammalList.add(dog);
-                dogList.add(dog);
+            if(i<2){
+                Animal animal = new Dog("Animal"+i);
+                Mammal mammal = new Dog("Mammal"+i);
+                Bird bird = new Parrot("Bird"+i);
+                Dog dog = new Dog("Dog"+i);
+                Parrot parrot = new Parrot("Parrot"+i);
 
-                Parrot parrot = new Parrot(names[i]);
-                animalList.add(parrot);
-                birdList.add(parrot);
+                animalList.add(animal);
+                mammalList.add(mammal);
+                birdList.add(bird);
+                dogList.add(dog);
                 parrotList.add(parrot);
-            }else{
-                Dog dog = new Dog(names[i]);
-                animalList.add(dog);
-                mammalList.add(dog);
-                dogList.add(dog);
 
+            }else{
+                Animal animal = new Dog();
+                Mammal mammal = new Dog();
+                Bird bird = new Parrot();
+                Dog dog = new Dog();
                 Parrot parrot = new Parrot();
-                animalList.add(parrot);
-                birdList.add(parrot);
+
+                animalList.add(animal);
+                mammalList.add(mammal);
+                birdList.add(bird);
+                dogList.add(dog);
                 parrotList.add(parrot);
             }
         }
