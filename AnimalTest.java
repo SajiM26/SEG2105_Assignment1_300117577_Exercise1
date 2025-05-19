@@ -57,8 +57,8 @@ public class AnimalTest {
         }
 
         System.out.println("Number of Animals total: "+Animal.getNumberOfAnimals()+".");
-        System.out.println("Number of Mammals total: "+Animal.getNumberOfMammals()+".");
-        System.out.println("Number of Birds total: "+Animal.getNumberOfBirds()+".");
+        System.out.println("Number of Mammals total: "+Mammal.getNumberOfMammals()+".");
+        System.out.println("Number of Birds total: "+Bird.getNumberOfBirds()+".");
 
 
 
