@@ -2,12 +2,13 @@ public abstract class Bird extends Animal {
      private static int numberOfBirds = 0;
 
     //Constructors
-    public Birds(){
+    public Bird(){
         super();
         numberOfBirds++;
         System.out.println("Bird Constructor called");
     }
-     public Birds(String name){
+
+     public Bird(String name){
         super(name);
         numberOfBirds++;
         System.out.println("Bird Constructor with name called");
