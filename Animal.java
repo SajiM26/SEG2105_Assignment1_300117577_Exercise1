@@ -1,4 +1,3 @@
-import java.lang.reflect.Constructor;
 
 public abstract class Animal implements SoundsMaker {
     private static int numberOfAnimals = 0;
@@ -12,10 +11,10 @@ public abstract class Animal implements SoundsMaker {
         name = "Unknown Animal";
     }
 
-    public Animal(String named){
+    public Animal(String name){
         System.out.println("Animal Constructor with name called");
         numberOfAnimals++;
-        name = named;
+        this.name = name;
     }
 
     //Methods
