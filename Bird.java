@@ -24,7 +24,7 @@ public abstract class Bird extends Animal {
         return "Bird";
     }
 
-    public int getNumberOfBirds(){
+    public static int getNumberOfBirds(){
         return numberOfBirds;
     }
 }

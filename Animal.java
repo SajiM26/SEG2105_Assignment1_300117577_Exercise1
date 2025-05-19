@@ -21,7 +21,7 @@ public abstract class Animal implements SoundsMaker {
 
     public abstract String getAnimalType();
 
-    public int getNumberOfAnimals(){
+    public static int getNumberOfAnimals(){
         return numberOfAnimals;
     }
 

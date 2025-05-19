@@ -23,7 +23,7 @@ public abstract class Mammal extends Animal{
         return "Mammal";
     }
 
-    public int getNumberOfMammals(){
+    public static int getNumberOfMammals(){
         return numberOfMammals;
     }
 
