@@ -1,3 +1,5 @@
+package Exercise1;
+
 public class Parrot extends Bird {
     //Constructors
     public Parrot(){

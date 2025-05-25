@@ -1,3 +1,5 @@
+package Exercise1;
+
 public abstract class Animal implements SoundsMaker {
     private static int numberOfAnimals = 0;
     private String name;

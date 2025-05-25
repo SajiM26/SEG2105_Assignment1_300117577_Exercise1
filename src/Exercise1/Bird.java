@@ -1,3 +1,5 @@
+package Exercise1;
+
 public abstract class Bird extends Animal {
      private static int numberOfBirds = 0;
 

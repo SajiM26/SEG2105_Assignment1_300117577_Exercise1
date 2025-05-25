@@ -1,3 +1,5 @@
+package Exercise1;
+
 public class Dog extends Mammal{
     
     //Constructors

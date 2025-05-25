@@ -1,3 +1,5 @@
+package Exercise1;
+
 public abstract class Mammal extends Animal{
     private static int numberOfMammals = 0;
 
