@@ -2,7 +2,7 @@ package Exercise1;
 
 public abstract class Animal implements SoundsMaker {
     private static int numberOfAnimals = 0;
-    private String name;
+    protected String name;
 
     //Contructors
 
@@ -21,6 +21,14 @@ public abstract class Animal implements SoundsMaker {
     //Methods
 
     public abstract String getAnimalType();
+
+    public void makeSound(){
+        if(name != "Unknown Animal"){
+            System.out.println("Named animal sound");
+        }else{
+             System.out.println("Unknown animal sound");
+        }
+    }
 
     public static int getNumberOfAnimals(){
         return numberOfAnimals;

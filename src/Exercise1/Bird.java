@@ -1,6 +1,6 @@
 package Exercise1;
 
-public abstract class Bird extends Animal {
+public class Bird extends Animal {
      private static int numberOfBirds = 0;
 
     //Constructors
@@ -19,7 +19,7 @@ public abstract class Bird extends Animal {
     //Methods
 
     public void makeSound(){
-        System.out.println("Bird sounds");
+        System.out.println(getAnimalType()+" sounds");
     }
 
     public String getAnimalType(){

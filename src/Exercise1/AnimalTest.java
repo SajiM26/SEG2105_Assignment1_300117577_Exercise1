@@ -7,58 +7,65 @@ public class AnimalTest {
     public static void main(String[] args){
 
         ArrayList<Animal> animalList = new ArrayList<Animal>();
-        ArrayList<Mammal> mammalList = new ArrayList<Mammal>();
+        ArrayList<Mammal> mammalList = new ArrayList<>();
         ArrayList<Bird> birdList = new ArrayList<Bird>();
         ArrayList<Dog> dogList = new ArrayList<Dog>();
         ArrayList<Parrot> parrotList = new ArrayList<Parrot>();
 
-
-
-        for(int i=0;i<4;i++){
-            if(i<2){
-                Animal animal = new Dog("Animal"+i);
-                Mammal mammal = new Dog("Mammal"+i);
-                Bird bird = new Parrot("Bird"+i);
-                Dog dog = new Dog("Dog"+i);
-                Parrot parrot = new Parrot("Parrot"+i);
-
-                animalList.add(animal);
-                mammalList.add(mammal);
-                birdList.add(bird);
-                dogList.add(dog);
-                parrotList.add(parrot);
-
-            }else{
-                Animal animal = new Dog();
-                Mammal mammal = new Dog();
-                Bird bird = new Parrot();
-                Dog dog = new Dog();
-                Parrot parrot = new Parrot();
-
-                animalList.add(animal);
-                mammalList.add(mammal);
-                birdList.add(bird);
-                dogList.add(dog);
-                parrotList.add(parrot);
+        for(int j=0 ; j<4 ; j++){
+            if(j<2){
+                Animal a = new Animal() {
+                    public String getAnimalType(){
+                        return "Animal";
+                    }
+                };
+                animalList.add(a);
+            }
+            else{
+                Animal a = new Animal("a"+j) {
+                    public String getAnimalType(){
+                        return "Animal";
+                    }
+                };
+                animalList.add(a);
             }
         }
+        
+        mammalList.add(new Mammal());
+        mammalList.add(new Mammal());
+        mammalList.add(new Mammal("m1"));
+        mammalList.add(new Mammal("m2"));
 
+        birdList.add(new Bird());
+        birdList.add(new Bird());
+        birdList.add(new Bird("b1"));
+        birdList.add(new Bird("b2"));
+
+        dogList.add(new Dog());
+        dogList.add(new Dog());
+        dogList.add(new Dog("d1"));
+        dogList.add(new Dog("d2"));
+
+        parrotList.add(new Parrot());
+        parrotList.add(new Parrot());
+        parrotList.add(new Parrot("p1"));
+        parrotList.add(new Parrot("p2"));
+    
+
+
+        
         for(Animal a:animalList){
             a.makeSound();
         }
-
         for(Mammal m:mammalList){
             m.makeSound();
         }
-
+         for(Bird b:birdList){
+            b.makeSound();
+        }
         for(Dog d:dogList){
             d.makeSound();
         }
-
-        for(Bird b:birdList){
-            b.makeSound();
-        }
-
         for(Parrot p:parrotList){
             p.makeSound();
         }
